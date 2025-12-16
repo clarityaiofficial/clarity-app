@@ -1,20 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LF1HNGN0NT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LF1HNGN0NT');
-</script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clarity – From Prompts to Agent-Ready AI</title>
-  <meta name="description" content="The clarity engine for AI. Structure your thoughts for today's models, prepare for tomorrow's autonomous agents." />
+  <meta name="description" content="Unlimited clarity for everything you do with AI — today and when agents take over." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
@@ -86,13 +76,15 @@
     <div class="orb orb-b hidden lg:block"></div>
     <div class="max-w-7xl mx-auto px-6 text-center">
       <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-bold mb-6">
-        <span class="animate-pulse">⚡</span> Limited Beta • <span id="countdown-hero" class="countdown"></span>
+        <span class="animate-pulse">⚡</span> Limited Beta • <span id="countdown-hero" class="countdown"></span> • Then 5-Day Trials
       </div>
       <h1 class="text-5xl md:text-7xl font-black leading-tight">
         Stop Prompting.<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-orange-500">Start Building Clarity.</span>
       </h1>
-      <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-        Prompts are temporary. Clarity is permanent.<br>
+      <p class="mt-6 text-2xl md:text-3xl font-bold text-gray-800 max-w-4xl mx-auto leading-snug">
+        Unlimited clarity for everything you do with AI — today and when agents take over.
+      </p>
+      <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
         Structure your AI instructions today. Command autonomous agents tomorrow.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -115,13 +107,12 @@
         </div>
         <div class="flex items-center gap-2">
           <svg class="w-5 h-5 text-teal-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
-          <span>Free until Feb 19, 2026</span>
+          <span>Free beta until Jan 16 • 5-day trials after</span>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- 3-ERA COMPARISON -->
+<!-- 3-ERA COMPARISON -->
   <section id="proof" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-12">
@@ -271,7 +262,7 @@ AUTHORITY: Auto-execute if all constraints met</pre>
           <div class="text-sm text-gray-500" id="step-counter">Step 1 of 3</div>
         </div>
 
-        <!-- Step 1: Role & Goal -->
+        <!-- Step 1 -->
         <div id="step-1" class="space-y-6">
           <div>
             <label class="block text-lg font-bold text-gray-800 mb-3">1. What expert role should the AI adopt?</label>
@@ -286,7 +277,7 @@ AUTHORITY: Auto-execute if all constraints met</pre>
           </button>
         </div>
 
-        <!-- Step 2: Task & Tone -->
+        <!-- Step 2 -->
         <div id="step-2" class="space-y-6 hidden">
           <div>
             <label class="block text-lg font-bold text-gray-800 mb-3">3. Core Task</label>
@@ -304,16 +295,12 @@ AUTHORITY: Auto-execute if all constraints met</pre>
             </select>
           </div>
           <div class="flex gap-4">
-            <button id="back-2" class="flex-1 py-4 rounded-xl bg-gray-200 text-gray-700 font-bold text-lg hover:bg-gray-300 transition">
-              ← Back
-            </button>
-            <button id="next-2" class="flex-1 py-4 rounded-xl gradient-secondary text-white font-bold text-lg shadow-lg hover:scale-[1.02] transition">
-              Next: Format & Constraints →
-            </button>
+            <button id="back-2" class="flex-1 py-4 rounded-xl bg-gray-200 text-gray-700 font-bold text-lg hover:bg-gray-300 transition">← Back</button>
+            <button id="next-2" class="flex-1 py-4 rounded-xl gradient-secondary text-white font-bold text-lg shadow-lg hover:scale-[1.02] transition">Next: Format & Constraints →</button>
           </div>
         </div>
 
-        <!-- Step 3: Format & Constraints -->
+        <!-- Step 3 -->
         <div id="step-3" class="space-y-6 hidden">
           <div>
             <label class="block text-lg font-bold text-gray-800 mb-3">5. Output Format</label>
@@ -331,12 +318,8 @@ AUTHORITY: Auto-execute if all constraints met</pre>
             <textarea id="constraints" rows="2" class="w-full p-4 border-2 border-gray-200 rounded-xl focus:border-teal-500 focus:ring-4 focus:ring-teal-100 transition text-lg" placeholder="e.g., Each step must include Risk Score (1-10) and Mitigation Strategy"></textarea>
           </div>
           <div class="flex gap-4">
-            <button id="back-3" class="flex-1 py-4 rounded-xl bg-gray-200 text-gray-700 font-bold text-lg hover:bg-gray-300 transition">
-              ← Back
-            </button>
-            <button id="generate" class="flex-1 py-4 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-lg shadow-lg hover:scale-[1.02] transition">
-              Generate Prompt ✨
-            </button>
+            <button id="back-3" class="flex-1 py-4 rounded-xl bg-gray-200 text-gray-700 font-bold text-lg hover:bg-gray-300 transition">← Back</button>
+            <button id="generate" class="flex-1 py-4 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-lg shadow-lg hover:scale-[1.02] transition">Generate Prompt ✨</button>
           </div>
         </div>
 
@@ -352,16 +335,12 @@ AUTHORITY: Auto-execute if all constraints met</pre>
             <pre id="output" class="prompt-box bg-gray-100 text-sm p-6 min-h-[200px] border-l-4 border-teal-500 whitespace-pre-wrap">Your generated prompt will appear here...</pre>
           </div>
           <div class="flex gap-4">
-            <button id="copy" class="flex-1 py-4 rounded-xl gradient-primary text-white font-bold text-lg shadow-lg hover:scale-[1.02] transition">
-              📋 Copy Prompt
-            </button>
-            <button id="reset" class="flex-1 py-4 rounded-xl bg-gray-200 text-gray-700 font-bold text-lg hover:bg-gray-300 transition">
-              ↻ Start Over
-            </button>
+            <button id="copy" class="flex-1 py-4 rounded-xl gradient-primary text-white font-bold text-lg shadow-lg hover:scale-[1.02] transition">📋 Copy Prompt</button>
+            <button id="reset" class="flex-1 py-4 rounded-xl bg-gray-200 text-gray-700 font-bold text-lg hover:bg-gray-300 transition">↻ Start Over</button>
           </div>
         </div>
 
-        <!-- Templates Sidebar -->
+        <!-- Templates -->
         <div class="mt-10 pt-10 border-t-2 border-gray-100">
           <h3 class="text-xl font-bold mb-4">Quick Templates</h3>
           <div class="grid md:grid-cols-3 gap-4">
@@ -382,6 +361,98 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       </div>
     </div>
   </section>
+<!-- PRICING SECTION -->
+  <section id="pricing" class="py-20 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">Simple, Transparent Pricing</h2>
+        <p class="text-xl text-gray-600">One plan. All features. No games.</p>
+      </div>
+
+      <div class="bg-gradient-to-br from-teal-50 to-orange-50 rounded-3xl shadow-2xl p-10 border-4 border-teal-500 max-w-md mx-auto">
+        <span class="inline-block px-4 py-1 bg-orange-500 text-white text-xs font-bold rounded-full mb-4">
+          5-DAY FREE TRIAL
+        </span>
+        
+        <h3 class="text-3xl font-black mb-2">Professional</h3>
+        <div class="mb-6">
+          <span class="text-5xl font-black">$9.99</span>
+          <span class="text-gray-600">/month</span>
+        </div>
+        
+        <ul class="text-left space-y-3 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span><strong>Unlimited prompts</strong> – Generate as many as you need</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span><strong>Full template library</strong> – 15+ battle-tested patterns</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span><strong>Reverse Engineer tool</strong> – Extract structure from raw prompts</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span><strong>Clarity Score</strong> – Real-time prompt validation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span><strong>Priority support</strong> – Direct email access</span>
+          </li>
+        </ul>
+        
+        <!-- STRIPE PAYMENT BUTTON - YOU WILL ADD YOUR LINK HERE -->
+        <button onclick="handleSubscribe()" class="w-full py-4 rounded-xl gradient-secondary text-white font-bold text-lg shadow-lg hover:scale-[1.02] transition mb-4" id="subscribe-btn">
+          Coming Jan 17, 2026
+        </button>
+        
+        <p class="text-xs text-gray-600 text-center">
+          ✓ 5-day free trial, no card required<br>
+          ✓ After trial: $9.99/month, cancel anytime
+        </p>
+      </div>
+      
+      <div class="mt-8 text-sm text-gray-500 text-center">
+        <p>🔒 Secure payment via Stripe • 🎓 Student discount available</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-6 text-center">Common Questions</h3>
+      
+      <div class="space-y-4">
+        <details class="bg-white p-4 rounded-lg">
+          <summary class="font-bold cursor-pointer">What happens during the 5-day trial?</summary>
+          <p class="mt-2 text-gray-600">You get full access to everything: unlimited prompts, all templates, Reverse Engineer tool, and Clarity Score. No credit card required during beta (until Jan 16).</p>
+        </details>
+        
+        <details class="bg-white p-4 rounded-lg">
+          <summary class="font-bold cursor-pointer">Can I cancel during the trial?</summary>
+          <p class="mt-2 text-gray-600">Yes! After Jan 17, you can cancel anytime during your 5-day trial. During beta (until Jan 16), everything is free with no commitments.</p>
+        </details>
+        
+        <details class="bg-white p-4 rounded-lg">
+          <summary class="font-bold cursor-pointer">What happens after the trial?</summary>
+          <p class="mt-2 text-gray-600">After your 5-day trial, you'll need to subscribe at $9.99/month to continue using Clarity. You keep full access and can cancel anytime.</p>
+        </details>
+        
+        <details class="bg-white p-4 rounded-lg">
+          <summary class="font-bold cursor-pointer">Is there a free plan?</summary>
+          <p class="mt-2 text-gray-600">We focus on delivering maximum value to paying customers rather than maintaining a limited free tier. The 5-day trial gives you full access to evaluate Clarity.</p>
+        </details>
+
+        <details class="bg-white p-4 rounded-lg">
+          <summary class="font-bold cursor-pointer">What AI models does Clarity work with?</summary>
+          <p class="mt-2 text-gray-600">Clarity's structured prompts work with all major AI models: ChatGPT, Claude, Gemini, and any future models. The clarity framework is model-agnostic.</p>
+        </details>
+      </div>
+    </div>
+  </section>
 
   <!-- EMAIL SIGNUP SECTION -->
   <section id="signup" class="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -393,9 +464,9 @@ AUTHORITY: Auto-execute if all constraints met</pre>
           <p class="mt-2 text-sm text-gray-500" id="signup-status"></p>
         </div>
 
-        <!-- Web3Forms Integration - REPLACE access_key -->
+        <!-- Web3Forms Integration -->
         <form id="email-signup-form" class="space-y-4">
-          <input type="hidden" name="access_key" value="5f63641a-abae-4645-be4b-f91c2338362f">
+          <input type="hidden" name="access_key" value="f6fee6ef-d2d0-47dd-bb98-0efc7c978aa4">
           <input type="hidden" name="subject" value="New Clarity Beta Signup">
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           
@@ -419,7 +490,7 @@ AUTHORITY: Auto-execute if all constraints met</pre>
           </button>
           
           <p class="text-xs text-center text-gray-500">
-            No credit card required • Free until Feb 19, 2026
+            No credit card required • Free until Jan 16, 2026
           </p>
         </form>
         
@@ -439,19 +510,21 @@ AUTHORITY: Auto-execute if all constraints met</pre>
   <footer class="py-12 bg-gray-900 text-gray-300">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <p class="text-sm mb-4">© 2025 Clarity. Built for engineers who command tomorrow's agents.</p>
-      <p class="text-xs">Questions? Email: <a href="mailto:hello@clarity.ai" class="text-teal-400 hover:underline">hello@clarity.ai</a></p>
+      <p class="text-xs">Questions? Email: <a href="mailto:clarity.support.2025@gmail.com" class="text-teal-400 hover:underline">clarity.support.2025@gmail.com</a></p>
     </div>
   </footer>
-
-  <script>
+<script>
     // ============================================
-    // LOCALSTORAGE USER MANAGEMENT SYSTEM
+    // CONFIGURATION
     // ============================================
     
-    const BETA_END_DATE = new Date('2026-02-19T00:00:00Z');
-    const FREE_PROMPT_LIMIT = 30;
+    const BETA_END_DATE = new Date('2026-01-16T23:59:59Z');
+    const TRIAL_DAYS = 5;
     
-    // Initialize or get user data
+    // ============================================
+    // USER MANAGEMENT SYSTEM
+    // ============================================
+    
     function initUser() {
       let user = localStorage.getItem('clarity_user');
       
@@ -461,7 +534,9 @@ AUTHORITY: Auto-execute if all constraints met</pre>
           email: null,
           signupDate: Date.now(),
           promptsUsed: 0,
-          plan: 'beta',
+          trialStartDate: null,
+          trialEndDate: null,
+          hasPaid: false,
           lastVisit: Date.now()
         };
         localStorage.setItem('clarity_user', JSON.stringify(user));
@@ -474,7 +549,6 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       return user;
     }
     
-    // Check if user can generate prompts
     function canGeneratePrompt() {
       const user = JSON.parse(localStorage.getItem('clarity_user'));
       const now = new Date();
@@ -484,21 +558,35 @@ AUTHORITY: Auto-execute if all constraints met</pre>
         return { allowed: true, reason: 'beta' };
       }
       
-      // After beta: check limit
-      if (user.promptsUsed < FREE_PROMPT_LIMIT) {
-        return { allowed: true, reason: 'free', remaining: FREE_PROMPT_LIMIT - user.promptsUsed };
+      // After beta: check if in trial
+      if (user.trialEndDate && now < new Date(user.trialEndDate)) {
+        return { allowed: true, reason: 'trial' };
       }
       
-      return { allowed: false, reason: 'limit_reached' };
+      // Has paid subscription
+      if (user.hasPaid) {
+        return { allowed: true, reason: 'paid' };
+      }
+      
+      // No trial started yet - start it now
+      if (!user.trialStartDate) {
+        const trialEnd = new Date(now);
+        trialEnd.setDate(trialEnd.getDate() + TRIAL_DAYS);
+        user.trialStartDate = now.toISOString();
+        user.trialEndDate = trialEnd.toISOString();
+        localStorage.setItem('clarity_user', JSON.stringify(user));
+        return { allowed: true, reason: 'trial_started' };
+      }
+      
+      // Trial expired, no payment
+      return { allowed: false, reason: 'trial_expired' };
     }
     
-    // Track prompt generation
     function trackPromptGeneration() {
       const user = JSON.parse(localStorage.getItem('clarity_user'));
       user.promptsUsed += 1;
       localStorage.setItem('clarity_user', JSON.stringify(user));
       
-      // Track in GA4
       if (typeof gtag !== 'undefined') {
         gtag('event', 'generate_prompt', {
           'prompts_used': user.promptsUsed,
@@ -509,7 +597,6 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       updateUserStatus();
     }
     
-    // Update user status display
     function updateUserStatus() {
       const user = JSON.parse(localStorage.getItem('clarity_user'));
       const statusEl = document.getElementById('user-status');
@@ -517,21 +604,21 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       
       if (now < BETA_END_DATE) {
         const daysLeft = Math.ceil((BETA_END_DATE - now) / (1000 * 60 * 60 * 24));
-        statusEl.textContent = `🎉 Beta Access: Unlimited prompts for ${daysLeft} more days`;
+        statusEl.textContent = `🎉 Beta Access: Unlimited until Jan 16 (${daysLeft} days left)`;
+        statusEl.className = 'mt-4 text-sm text-green-600 font-semibold';
+      } else if (user.trialEndDate && now < new Date(user.trialEndDate)) {
+        const trialDaysLeft = Math.ceil((new Date(user.trialEndDate) - now) / (1000 * 60 * 60 * 24));
+        statusEl.textContent = `⏰ Trial: ${trialDaysLeft} days left - Subscribe to continue after trial`;
+        statusEl.className = 'mt-4 text-sm text-orange-600 font-semibold';
+      } else if (user.hasPaid) {
+        statusEl.textContent = `✓ Professional Plan Active`;
         statusEl.className = 'mt-4 text-sm text-green-600 font-semibold';
       } else {
-        const remaining = FREE_PROMPT_LIMIT - user.promptsUsed;
-        if (remaining > 0) {
-          statusEl.textContent = `Free Tier: ${remaining} prompts remaining`;
-          statusEl.className = 'mt-4 text-sm text-orange-600 font-semibold';
-        } else {
-          statusEl.textContent = `Free prompts used. Upgrade for unlimited access.`;
-          statusEl.className = 'mt-4 text-sm text-red-600 font-semibold';
-        }
+        statusEl.textContent = `Trial ended. Subscribe to continue using Clarity`;
+        statusEl.className = 'mt-4 text-sm text-red-600 font-semibold';
       }
     }
     
-    // Update countdown timer
     function updateCountdown() {
       const now = new Date();
       const diff = BETA_END_DATE - now;
@@ -545,6 +632,38 @@ AUTHORITY: Auto-execute if all constraints met</pre>
           el.textContent = 'Beta Ended';
         }
       });
+    }
+    
+    // ============================================
+    // STRIPE SUBSCRIPTION HANDLER
+    // ============================================
+    
+    function handleSubscribe() {
+      const now = new Date();
+      
+      if (now < BETA_END_DATE) {
+        alert('Beta is currently free! Payments start Jan 17, 2026. Keep using Clarity unlimited until then.');
+        return;
+      }
+      
+      // REPLACE THIS URL WITH YOUR STRIPE PAYMENT LINK
+      // Get this from: stripe.com → Payment Links → Create Payment Link
+      const STRIPE_PAYMENT_LINK = 'STRIPE_PAYMENT_LINK_HERE';
+      
+      if (STRIPE_PAYMENT_LINK === 'STRIPE_PAYMENT_LINK_HERE') {
+        alert('Payment processing is being set up. Check back on Jan 17, 2026!');
+        return;
+      }
+      
+      // Redirect to Stripe payment page
+      window.location.href = STRIPE_PAYMENT_LINK;
+      
+      // Track subscription attempt
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'subscribe_attempt', {
+          'user_id': JSON.parse(localStorage.getItem('clarity_user')).id
+        });
+      }
     }
     
     // ============================================
@@ -583,7 +702,6 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       document.getElementById('step-counter').textContent = step < 4 ? `Step ${step} of 3` : 'Complete!';
       currentStep = step;
       
-      // Track step progress
       if (typeof gtag !== 'undefined') {
         gtag('event', 'builder_step', {
           'step_number': step
@@ -592,31 +710,28 @@ AUTHORITY: Auto-execute if all constraints met</pre>
     }
     
     function calculateClarityScore(prompt) {
-      let score = 50; // Base score
+      let score = 50;
       
-      // Check for key components
       if (prompt.includes('GOAL:')) score += 10;
       if (prompt.includes('PERSONA:')) score += 10;
       if (prompt.includes('TASK:')) score += 10;
       if (prompt.includes('OUTPUT_FORMAT:')) score += 10;
       if (prompt.includes('CONSTRAINTS:')) score += 10;
       
-      // Length bonus (structured prompts are usually longer)
       if (prompt.length > 200) score += 5;
       if (prompt.length > 300) score += 5;
       
-      // Formatting bonus
-      if (prompt.includes('**')) score += 5; // Bold formatting
-      if (prompt.split('\n').length > 5) score += 5; // Multi-line
+      if (prompt.includes('**')) score += 5;
+      if (prompt.split('\n').length > 5) score += 5;
       
       return Math.min(100, score);
     }
     
     function generatePrompt() {
-      // Check if user can generate
       const check = canGeneratePrompt();
       if (!check.allowed) {
-        alert('You have reached your free prompt limit. Upgrade to continue generating prompts!');
+        alert('Your trial has ended. Subscribe to continue generating prompts!');
+        document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
         return;
       }
       
@@ -641,7 +756,6 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       
       document.getElementById('output').textContent = prompt;
       
-      // Calculate and display clarity score
       const score = calculateClarityScore(prompt);
       document.getElementById('clarity-score').textContent = score;
       
@@ -653,9 +767,7 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       
       document.getElementById('score-label').textContent = label;
       
-      // Track generation
       trackPromptGeneration();
-      
       showStep(4);
     }
     
@@ -668,12 +780,10 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       
       const email = document.getElementById('signup-email').value;
       
-      // Update user data
       const user = JSON.parse(localStorage.getItem('clarity_user'));
       user.email = email;
       localStorage.setItem('clarity_user', JSON.stringify(user));
       
-      // Track signup
       if (typeof gtag !== 'undefined') {
         gtag('event', 'signup', {
           'method': 'email',
@@ -682,7 +792,6 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       }
       
       try {
-        // Submit to Web3Forms - build form data manually
         const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {
@@ -768,7 +877,6 @@ AUTHORITY: Auto-execute if all constraints met</pre>
           
           showStep(3);
           
-          // Track template usage
           if (typeof gtag !== 'undefined') {
             gtag('event', 'use_template', {
               'template_name': templateName
@@ -817,12 +925,10 @@ AUTHORITY: Auto-execute if all constraints met</pre>
         await navigator.clipboard.writeText(text);
         alert('✓ Prompt copied to clipboard!');
         
-        // Track copy
         if (typeof gtag !== 'undefined') {
           gtag('event', 'copy_prompt');
         }
       } catch (err) {
-        // Fallback for older browsers
         const textarea = document.createElement('textarea');
         textarea.value = text;
         document.body.appendChild(textarea);
@@ -852,10 +958,8 @@ AUTHORITY: Auto-execute if all constraints met</pre>
       updateUserStatus();
       updateCountdown();
       
-      // Update countdown every hour
       setInterval(updateCountdown, 3600000);
       
-      // Check if user came from signup
       const user = JSON.parse(localStorage.getItem('clarity_user'));
       if (user.email) {
         document.getElementById('signup-status').textContent = `✓ Signed in as ${user.email}`;
